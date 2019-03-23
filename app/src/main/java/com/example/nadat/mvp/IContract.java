@@ -10,4 +10,8 @@ public interface IContract {
 
         void showToastFalse();
     }
+
+    interface IModel{
+        boolean isTrue();
+    }
 }
