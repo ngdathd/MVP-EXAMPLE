@@ -10,11 +10,11 @@ public class MainPresenter implements IContract.IPresenter {
     }
 
     @Override
-    public void showToast() {
+    public void checkTrueOrFalse() {
         if (mMainModel.isTrue()) {
-            mIView.onTrue();
+            mIView.showToastTrue();
         } else {
-            mIView.onFalse();
+            mIView.showToastFalse();
         }
     }
 }

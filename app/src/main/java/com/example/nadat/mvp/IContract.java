@@ -2,12 +2,12 @@ package com.example.nadat.mvp;
 
 public interface IContract {
     interface IPresenter {
-        void showToast();
+        void checkTrueOrFalse();
     }
 
     interface IView {
-        void onTrue();
+        void showToastTrue();
 
-        void onFalse();
+        void showToastFalse();
     }
 }

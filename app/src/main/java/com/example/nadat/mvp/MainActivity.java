@@ -13,16 +13,16 @@ public class MainActivity extends AppCompatActivity implements IContract.IView {
         setContentView(R.layout.activity_main);
 
         mIPresenter = new MainPresenter(this);
-        mIPresenter.showToast();
+        mIPresenter.checkTrueOrFalse();
     }
 
     @Override
-    public void onTrue() {
+    public void showToastTrue() {
         Toast.makeText(this, "TRUE", Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public void onFalse() {
+    public void showToastFalse() {
         Toast.makeText(this, "FALSE", Toast.LENGTH_SHORT).show();
     }
 }
